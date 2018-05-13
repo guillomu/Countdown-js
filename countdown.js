@@ -1,3 +1,4 @@
+var ring = new Audio('sound/microwave.mp3');
 var buttonText = document.getElementById('button-text');
 var circle = document.getElementById('circle');
 var countdown = 0;
@@ -97,6 +98,8 @@ function timerTick(){
 		clearTimer();
 		buttonText.textContent = 'Done!';
 		buttonText.style.animation = 'blink 3s linear infinite';
+
+		ring.play();
 		
 		setTimeout(function(){ buttonText.style.animation = 'none'; buttonText.textContent = 'Start'; }, 3000);
 	} 
