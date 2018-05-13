@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 * {
 	box-sizing: border-box;
 }
@@ -34,7 +35,9 @@ a {
 	outline: 0;
 }
 
-h1{ text-shadow: 3px 3px DarkSlateGray; }
+h1{ 
+	text-shadow: 3px 3px DarkSlateGray; 
+}
 
 #countdown {
 	position: relative;
