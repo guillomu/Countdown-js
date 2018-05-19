@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Countdown</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div id="countdown">
+		<h1>The Countdown</h1>
+		<div id="button-text">Start</div>
+	
+		<form  name="setTime">
+			<input type="text" name="days"><label for="days">d </label>
+			<input type="text" name="hours"><label for="hours">h </label>
+			<input type="text" name="minutes"><label for="minutes">m </label>
+			<input type="text" name="seconds"><label for="seconds">s</label>
+		</form>
+
+		<svg>
+			<a href="#" onclick="return false;">
+				<circle id="start" cx="50%" cy="50%" r="40%"/>
+				<circle id="stop" cx="50%" cy="50%" r="40%"/>
+				<circle id="resume" cx="50%" cy="50%" r="40%"/>
+				<circle id="circle" cx="50%" cy="50%" r="35%"/>
+			</a>
+		</svg>
+		<button id="reset" type="button">Reset</button>
+	</div>
+	<script src="countdown.js"></script>
+</body>
+</html>
